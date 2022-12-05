@@ -12,3 +12,10 @@ Converts Softimage XSI .emdl to alembic. Does not need ADSK license.
 - launch softimage command prompt as admin
 - run
 `xsibatch.exe -processing -script "Path:\to\emdlConvert.pys" -main "main"`
+
+### ratConvert
+
+Converts image assets to SideFX Houdini .rat
+
+- put _ratConvert.sh_ inside images directory
+- `./ratConvert.sh`
