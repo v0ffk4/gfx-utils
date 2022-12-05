@@ -1,0 +1,8 @@
+def main():
+    Application.ImportModel("path:\to\emdl_1", "path:\to\emdl_2", "path:\to\emdl_3")
+
+    path = "C:\Models\{0}.abc".format( Application.Selection(0).Name )
+
+    model = "B:{0}".format( Application.Selection(0).Name )
+
+    Application.AbcExport( path, 1,2, model, False, "Ogawa", "Color, Scale, Size, PointVelocity, Orientation, AngularVelocity, Shape, StrandPosition, StrandVelocity, StrandDeform, StrandOrientation, StrandUpVector, StrandColor, StrandSize, ColorAlongStrands", "Materials, MaterialID, PointUserMotions", "")
